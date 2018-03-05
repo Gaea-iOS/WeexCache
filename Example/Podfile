@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'WeexCache_Example' do
   pod 'WeexSDK',          '~> 0.15.1'
+  pod 'Alamofire'
   pod 'WeexCache', :path => '../'
 
   target 'WeexCache_Tests' do

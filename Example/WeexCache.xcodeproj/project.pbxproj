@@ -15,9 +15,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9CFC228C26DD455907C29089 /* Pods_WeexCache_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBE237B6C32B3C49397E5B0 /* Pods_WeexCache_Tests.framework */; };
-		C86AD1292005EF580033AB3E /* WeexCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86AD1282005EF580033AB3E /* WeexCacheManager.swift */; };
-		C86AD12B2005EF6D0033AB3E /* WeexCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86AD12A2005EF6D0033AB3E /* WeexCacheService.swift */; };
-		C86AD12D2005EFAD0033AB3E /* WeexCachePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86AD12C2005EFAD0033AB3E /* WeexCachePersistence.swift */; };
+		C882C092201090FD00D8BBF9 /* WeexModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C882C091201090FD00D8BBF9 /* WeexModule.m */; };
+		C882C0942010954D00D8BBF9 /* WeexImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C882C0932010954D00D8BBF9 /* WeexImageLoader.swift */; };
+		C882C0962010997E00D8BBF9 /* WeexNavigatorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C882C0952010997E00D8BBF9 /* WeexNavigatorImp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,11 @@
 		8C2EA8E5B95BE10FAF8D8BE3 /* Pods-WeexCache_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexCache_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeexCache_Tests/Pods-WeexCache_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8EBE237B6C32B3C49397E5B0 /* Pods_WeexCache_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeexCache_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BF887E7D505594E50C0107 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C86AD1282005EF580033AB3E /* WeexCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeexCacheManager.swift; sourceTree = "<group>"; };
-		C86AD12A2005EF6D0033AB3E /* WeexCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeexCacheService.swift; sourceTree = "<group>"; };
-		C86AD12C2005EFAD0033AB3E /* WeexCachePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeexCachePersistence.swift; sourceTree = "<group>"; };
+		C882C08F201090FC00D8BBF9 /* WeexCache_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeexCache_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		C882C090201090FD00D8BBF9 /* WeexModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeexModule.h; sourceTree = "<group>"; };
+		C882C091201090FD00D8BBF9 /* WeexModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeexModule.m; sourceTree = "<group>"; };
+		C882C0932010954D00D8BBF9 /* WeexImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeexImageLoader.swift; sourceTree = "<group>"; };
+		C882C0952010997E00D8BBF9 /* WeexNavigatorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeexNavigatorImp.swift; sourceTree = "<group>"; };
 		DF71428447200A6C4FC1514B /* Pods-WeexCache_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexCache_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeexCache_Example/Pods-WeexCache_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EBEBD71A576FF7896E0E652E /* WeexCache.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WeexCache.podspec; path = ../WeexCache.podspec; sourceTree = "<group>"; };
 		F9000B7C86B774AB3FCB4B45 /* Pods_WeexCache_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeexCache_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,9 +107,11 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				C86AD1282005EF580033AB3E /* WeexCacheManager.swift */,
-				C86AD12A2005EF6D0033AB3E /* WeexCacheService.swift */,
-				C86AD12C2005EFAD0033AB3E /* WeexCachePersistence.swift */,
+				C882C090201090FD00D8BBF9 /* WeexModule.h */,
+				C882C091201090FD00D8BBF9 /* WeexModule.m */,
+				C882C0932010954D00D8BBF9 /* WeexImageLoader.swift */,
+				C882C08F201090FC00D8BBF9 /* WeexCache_Example-Bridging-Header.h */,
+				C882C0952010997E00D8BBF9 /* WeexNavigatorImp.swift */,
 			);
 			name = "Example for WeexCache";
 			path = WeexCache;
@@ -224,7 +228,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0910;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -365,11 +369,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WeexCache_Example/Pods-WeexCache_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 				"${BUILT_PRODUCTS_DIR}/WeexCache/WeexCache.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeexCache.framework",
 			);
@@ -386,10 +392,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				C86AD1292005EF580033AB3E /* WeexCacheManager.swift in Sources */,
+				C882C092201090FD00D8BBF9 /* WeexModule.m in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				C86AD12B2005EF6D0033AB3E /* WeexCacheService.swift in Sources */,
-				C86AD12D2005EFAD0033AB3E /* WeexCachePersistence.swift in Sources */,
+				C882C0942010954D00D8BBF9 /* WeexImageLoader.swift in Sources */,
+				C882C0962010997E00D8BBF9 /* WeexNavigatorImp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,11 +541,14 @@
 			baseConfigurationReference = DF71428447200A6C4FC1514B /* Pods-WeexCache_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WeexCache/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeexCache/WeexCache_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -550,11 +559,13 @@
 			baseConfigurationReference = 40351D40FC68CA4941066963 /* Pods-WeexCache_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WeexCache/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeexCache/WeexCache_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
