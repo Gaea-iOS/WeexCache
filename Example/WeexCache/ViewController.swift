@@ -16,12 +16,12 @@ class ViewController: UIViewController {
 	
 	let weexInstance = WXSDKInstance()
 	
-	let url = URL.init(string: "http://asweex.nowodds.cn/weex/MatchGoal.bundle.js?leagueId=49")!
+	let url = URL.init(string: "http://61.143.225.69:8088/weex/MatchGoal.bundle.js?leagueId=417")!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-		WeexCacheManager.shared.fetchNewManifest("http://asweex.nowodds.cn/weex/manifest.json")
+		WeexCacheManager.shared.fetchNewManifest("http://61.143.225.69:8088/weex/manifest.json")
 		
     }
 	
@@ -56,9 +56,9 @@ class ViewController: UIViewController {
 		}
 		
 		if info.isLocalFile {
-			weexInstance.renderView(info.localFile, options: ["bundleUrl" : info.bundleUrl, "leagueId" : "49"] , data: nil)
+			weexInstance.renderView(info.localFile, options: ["bundleUrl" : info.bundleUrl, "leagueId" : "417"] , data: nil)
 		} else {
-			weexInstance.render(with: URL.init(string: info.bundleUrl), options: ["bundleUrl" : info.bundleUrl, "leagueId" : "49"], data: nil)
+			weexInstance.render(with: URL.init(string: info.bundleUrl), options: ["bundleUrl" : info.bundleUrl, "leagueId" : "417"], data: nil)
 		}
 		
 	}

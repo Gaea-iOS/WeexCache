@@ -71,7 +71,7 @@ public class WeexCacheManager: NSObject {
 			let cacheIsNew = localManifest!.md5 == newManifest!.md5
 			let localFile = cacheIsNew ? loadLocalJsFile(bundle: bundle) : ""
 			let isLocalFile = cacheIsNew
-			return WeexBundleInfo(bundleUrl: newManifest!.path, localFile: localFile, isLocalFile: isLocalFile)
+			return WeexBundleInfo(bundleUrl: newManifest!.path.appending("?md5=\(newManifest!.md5)"), localFile: localFile, isLocalFile: isLocalFile)
 		}
 	}
 	
