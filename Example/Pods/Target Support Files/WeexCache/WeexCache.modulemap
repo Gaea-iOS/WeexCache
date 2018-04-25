@@ -1,6 +1,0 @@
-framework module WeexCache {
-  umbrella header "WeexCache-umbrella.h"
-
-  export *
-  module * { export * }
-}
